@@ -104,4 +104,10 @@ function App({ fetchProfile, getUser, fetchCart, getItems, fetchAddress }) {
   );
 }
 
-export de
+export default connect(null, {
+  getUser,
+  fetchProfile,
+  fetchCart,
+  getItems,
+  fetchAddress,
+})(App);

@@ -286,4 +286,4 @@ const mapStateToProps = (state) => ({
   cart: state.cart.shoppingCart,
 });
 
-export default connect(mapStateToProps, { fetchCart, addAddress })(
+export default connect(mapStateToProps, { fetchCart, addAddress })(Payment);
