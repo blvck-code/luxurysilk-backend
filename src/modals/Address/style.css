@@ -1,0 +1,206 @@
+/* Delete Address  */
+
+.delete-address {
+  background: #fff;
+  padding: 2rem;
+  margin: 20vh auto;
+  width: 40%;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.delete-nav button {
+  margin: 0 10px !important;
+}
+
+.delete-nav .delete {
+  color: red !important;
+  background: #fff !important;
+  transition: all 0.3s ease-in;
+  border: 1px solid red !important;
+}
+
+.delete-nav .delete:hover {
+  color: #fff !important;
+  background: red !important;
+}
+
+.delete-nav .cancel {
+  color: #555 !important;
+  background: #fff !important;
+  border: 1px solid #555 !important;
+  transition: all 0.3s ease-in;
+}
+
+.delete-nav .cancel:hover {
+  color: #fff !important;
+  background: #555 !important;
+  border: 1px solid #fff !important;
+}
+
+/* Add Address  */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 100;
+}
+
+.modal-wrapper {
+  background: #fff;
+  position: relative;
+  margin: 0 auto 50px;
+  margin-top: 5vh;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  width: 50%;
+  max-width: 650px;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 25px;
+}
+
+.modal-title {
+  line-height: 24px;
+  font-size: 18px;
+  color: #303133;
+  font-family: "Open Sans", "Roboto", "Helvetica", sans-serif, Arial;
+}
+
+.modal-title__btn svg {
+  font-family: element-icons !important;
+  speak: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  -webkit-font-feature-settings: normal;
+  font-feature-settings: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: baseline;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.add-address .shipping-form,
+.update-address .shipping-form {
+  padding: 10px 25px;
+}
+
+.modal-body .input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-body label {
+  font-size: 13px;
+  color: #555;
+  font-family: "Lato";
+  letter-spacing: 0.5px;
+}
+
+.modal-body .input-names input {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 15px;
+  border: 1px solid #dcdfe6;
+  border-top-color: rgb(220, 223, 230);
+  border-right-color: rgb(220, 223, 230);
+  border-bottom-color: rgb(220, 223, 230);
+  border-left-color: rgb(220, 223, 230);
+  transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  width: 100%;
+}
+
+.modal-body input,
+.modal-body textarea,
+.modal-body select {
+  width: 100%;
+  padding: 8px;
+  font-size: 15px;
+  border-radius: 2px;
+  background: #fff;
+  color: #181818;
+  border: 1px solid #dcdfe6 !important;
+  outline: none;
+  word-break: break-all;
+  font-weight: 500 !important;
+  font-family: "Lato", Helvetica, sans-serif, Arial;
+}
+
+.modal-body input:focus,
+.modal-body textarea:focus,
+.modal-body select:focus {
+  border-color: #ff6600 !important;
+}
+
+.modal-body input:hover,
+.modal-body textarea:hover,
+.modal-body select:hover {
+  border: 1px solid #c0c4cc !important;
+}
+
+.modal-body .input-names {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 16px;
+}
+
+.phone-input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.phone-input .phone-code {
+  border: 1px solid #aaa;
+  padding: 8px;
+  font-size: 15px;
+  border-radius: 2px;
+  background: #fff;
+  color: #181818;
+  margin-right: 8px;
+  font-weight: 500 !important;
+  font-family: "Lato", Helvetica, sans-serif, Arial;
+}
+
+.modal-body textarea {
+  height: 120px;
+}
+
+.input-default {
+  display: flex !important;
+  align-items: center;
+  flex-direction: row;
+  padding: 6px 0;
+}
+
+.input-default input {
+  width: 20px;
+}
+
+.input-default strong {
+  margin-left: 10px;
+}
+
+.modal-body .btn {
+  width: 100%;
+  border: none;
+  margin-top: 16px;
+  border-radius: 4px;
+  font-weight: 500;
+  text-transform: capitalize;
+}

@@ -1,0 +1,25 @@
+.alert {
+  padding: 5px 0;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  transition: all 0.25s ease-in;
+  letter-spacing: 0.5px;
+  font-family: "Rubik", serif !important;
+  transform: translateY(-100%);
+  opacity: 0;
+  max-height: 40px;
+}
+
+.alert.success {
+  background: rgba(4, 176, 4, 0.868);
+}
+
+.alert.error {
+  background: rgba(245, 13, 13, 0.951);
+}
+
+.showItem {
+  transform: translateY(0);
+  opacity: 1;
+}
