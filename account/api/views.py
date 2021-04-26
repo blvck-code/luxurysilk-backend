@@ -31,6 +31,16 @@ from account.models import Account, Profile
 from account.api.token_generator import generate_token
 from django.contrib.auth import authenticate
 from validate_email import validate_email
+import threading
+
+#THREADING
+class EmailThread(threading.Thread):
+    def __init__(self):
+        self.email = email
+        threading.Thread.__init__(self)
+
+    def run(self):
+        self.email.send(fail_silently= False)
 
 #SUBSCRIBE API
 @api_view(['POST',])
@@ -97,7 +107,9 @@ def register_view(request, *args, **kwargs):
             'noreply@blvck.com',
             [user.email]
         )
-        email_message.send()
+
+        EmailThread(email_message).start()
+
         return Response({'success':f"We've sent an email to {account.email}. Open it up to activate your account."}, status=status.HTTP_200_OK)
 
     else:
@@ -201,7 +213,7 @@ def requestResetPasswordView(request, *args, **kwargs):
             [user.email]
         )
 
-        email_message.send()
+        EmailMessage(email_message).start()
         return Response({
             'message': 'We have sent you a link to reset your password.'},
             status=status.HTTP_200_OK

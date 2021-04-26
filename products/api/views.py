@@ -27,7 +27,7 @@ from django.utils import timezone
 @api_view(['GET', ])
 @permission_classes([])
 @authentication_classes([])
-def apiOverview(request):
+def api_overview(request):
     api_urls = {
         'Login': '/api/login/',
         'Register': '/api/register/',
