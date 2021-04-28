@@ -38,7 +38,6 @@ import Shipping from "./layouts/Shipping";
 import ActivateUser from "./layouts/ActivateUser";
 import SetPassword from "./layouts/SetPassword";
 import SetPasswordSuccess from "./layouts/SetPasswordSuccess";
-import Stripe from "./layouts/Stripe";
 
 function App({ fetchProfile, getUser, fetchCart, getItems, fetchAddress }) {
   useEffect(() => {
@@ -60,7 +59,6 @@ function App({ fetchProfile, getUser, fetchCart, getItems, fetchAddress }) {
         <Alert />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/stripe" component={Stripe} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/register" component={Register} />
           <Route exact path="/reset-password" component={ResetPass} />
